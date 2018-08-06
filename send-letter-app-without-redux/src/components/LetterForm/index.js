@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, Button, Grid } from 'react-bootstrap';
 
 class LetterForm extends React.Component {
   state = {
@@ -28,13 +28,15 @@ class LetterForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <FormGroup controlId="formControlsTextarea">
-          <ControlLabel>Write the letter content here!</ControlLabel>
-          <FormControl componentClass="textarea" onChange={this.handleTextChange} value={this.state.text} />
-        </FormGroup>
-        <Button bsStyle="primary" type="submit">Send Letter!</Button>
-      </form>
+      <Grid>
+        <form onSubmit={this.handleSubmit}>
+          <FormGroup controlId="formControlsTextarea">
+            <ControlLabel>Write the letter content here!</ControlLabel>
+            <FormControl componentClass="textarea" onChange={this.handleTextChange} value={this.state.text} />
+          </FormGroup>
+          <Button bsStyle="primary" type="submit">Send Letter!</Button>
+        </form>
+      </Grid>
     );
   }
 }
