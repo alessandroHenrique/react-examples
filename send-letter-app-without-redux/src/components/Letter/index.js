@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, FormControl, ControlLabel, Button, Grid } from 'react-bootstrap';
+import { FormGroup, FormControl, ControlLabel, Grid } from 'react-bootstrap';
 
 const Letter = ({ text }) => (
   <Grid>
