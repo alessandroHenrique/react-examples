@@ -21,7 +21,7 @@ class LetterForm extends React.Component {
     e.preventDefault();
     this.props.handleSubmit(this.state.text)
     this.setState(() => ({
-      text: ''
+      text: 'Letter sent!'
     }));
   }
 
