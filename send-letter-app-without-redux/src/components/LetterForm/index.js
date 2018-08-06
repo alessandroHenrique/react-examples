@@ -28,7 +28,7 @@ class LetterForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <textarea onChange={this.handleTextChange}></textarea>
+        <textarea onChange={this.handleTextChange} value={this.state.text}></textarea>
         <button type="submit">Send Letter!</button>
       </form>
     );
