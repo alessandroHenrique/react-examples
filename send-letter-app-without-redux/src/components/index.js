@@ -1,5 +1,6 @@
 import React from 'react';
 import LetterForm from './LetterForm';
+import Letter from './Letter';
 
 class MainPage extends React.Component {
   state = {
@@ -15,7 +16,8 @@ class MainPage extends React.Component {
   render() {
     return (
       <div>
-        <LetterForm handleSubmit={this.handleSubmit}/>
+        <LetterForm handleSubmit={this.handleSubmit} />
+        <Letter text={this.state.text} />
       </div>
     );
   }
