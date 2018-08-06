@@ -20,6 +20,9 @@ class LetterForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.handleSubmit(this.state.text)
+    this.setState(() => ({
+      text: ''
+    }));
   }
 
   render() {
