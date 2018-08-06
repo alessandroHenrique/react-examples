@@ -1,9 +1,15 @@
 import React from 'react';
+import { FormGroup, FormControl, ControlLabel, Button, Grid } from 'react-bootstrap';
 
 const Letter = ({ text }) => (
-  <form>
-    <textarea value={text}></textarea>
-  </form>
+  <Grid>
+    <form>
+      <FormGroup controlId="formControlsTextarea">
+        <ControlLabel>Letter</ControlLabel>
+        <FormControl componentClass="textarea" value={text} />
+      </FormGroup>
+    </form>
+  </Grid>
 );
 
 export default Letter;
