@@ -17,6 +17,7 @@ class MainPage extends React.Component {
     return (
       <div>
         <LetterForm handleSubmit={this.handleSubmit} />
+        <hr />
         <Letter text={this.state.text} />
       </div>
     );
