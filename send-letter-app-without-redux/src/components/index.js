@@ -1,8 +1,9 @@
 import React from 'react';
+import LetterForm from './LetterForm';
 
 const MainPage = () => (
   <div>
-    Dale
+    <LetterForm />
   </div>
 );
 
