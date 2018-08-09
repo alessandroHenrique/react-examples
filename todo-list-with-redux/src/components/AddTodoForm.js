@@ -20,12 +20,15 @@ class addTodoForm extends React.Component {
   handleSubmitForm = (e) => {
     e.preventDefault();
     this.props.handleAddTodo(this.state.text);
+    this.setState(() => ({
+      text: ''
+    }));
   }
 
   render() {
     return (
       <form onSubmit={this.handleSubmitForm}>
-        <input type="text" onChange={this.handleTextChange} />
+        <input type="text" onChange={this.handleTextChange} value={this.state.text} />
         <button type="submit">Add todo!</button>
       </form>
     );
